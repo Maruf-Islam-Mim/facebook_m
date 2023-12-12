@@ -1,0 +1,38 @@
+.model-container {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.8)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  .model-box {
+    background: white;
+    width: 432px;
+    border-radius: 8px;
+    box-shadow: var(--fb-box-shadow);
+    .model-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      border-bottom: 1px solid #ccc;
+      h3 {
+        font-size: 32px;
+        font-weight: 600;
+      }
+      p {
+        font-size: 15px;
+      }
+      .close-btn {
+        span {
+          font-size: 25px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
